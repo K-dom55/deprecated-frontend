@@ -1,4 +1,4 @@
-import FormsTemplate from "@/components/FormsTemplate";
+import FormsTemplate from "@/components/templates/FormsTemplate";
 import { css } from "@emotion/react";
 
 import Image from "next/image";
