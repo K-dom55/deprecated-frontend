@@ -1,3 +1,9 @@
+import ResultTemplate from "@/components/templates/ResultTemplate";
+
 export default function Result() {
-  return <div>Result</div>;
+  return (
+    <div>
+      <ResultTemplate />
+    </div>
+  );
 }
