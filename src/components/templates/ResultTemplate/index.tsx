@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import ShareKakao from "@/components/atoms/ShareKakao";
-import React from "react";
-import Script from "next/script";
-import ShareTwitter from "@/components/atoms/ShareTwitter";
-import ShareNative from "@/components/atoms/ShareNative";
+import ShareKakao from '@/components/atoms/ShareKakao';
+import React from 'react';
+import Script from 'next/script';
+import ShareTwitter from '@/components/atoms/ShareTwitter';
+import ShareNative from '@/components/atoms/ShareNative';
 
 export default function Result() {
   return (

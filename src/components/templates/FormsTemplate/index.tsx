@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import React, { useEffect, useState } from "react";
-import { useForm } from "react-hook-form";
+import Image from 'next/image';
+import React, { useEffect, useState } from 'react';
+import { useForm } from 'react-hook-form';
 
 export default function FormsTemplate() {
   const {
@@ -13,8 +13,8 @@ export default function FormsTemplate() {
     watch,
     formState: { errors },
   } = useForm();
-  const [imagePreview, setImagePreview] = useState<string>("");
-  const image = watch("image");
+  const [imagePreview, setImagePreview] = useState<string>('');
+  const image = watch('image');
   const onSubmit = (values: any) => {};
 
   useEffect(() => {
@@ -30,24 +30,19 @@ export default function FormsTemplate() {
       <form onSubmit={handleSubmit(onSubmit)}>
         <input type="submit" />
         <input
-          {...register("username", {
-            validate: (value) => value !== "admin" || "Nice try!",
+          {...register('username', {
+            validate: (value) => value !== 'admin' || 'Nice try!',
           })}
         />
         <input
-          {...register("username", {
-            validate: (value) => value !== "admin" || "Nice try!",
+          {...register('username', {
+            validate: (value) => value !== 'admin' || 'Nice try!',
           })}
         />
         <Image src={imagePreview} alt="" width={100} height={100} />
         <label htmlFor="picture">
           이름
-          <input
-            id="picture"
-            {...register("image")}
-            type="file"
-            accept="image/*"
-          />
+          <input id="picture" {...register('image')} type="file" accept="image/*" />
         </label>
       </form>
     </div>

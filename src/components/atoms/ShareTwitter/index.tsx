@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export default function ShareTwitter() {
   return (
@@ -10,11 +10,7 @@ export default function ShareTwitter() {
       >
         Tweet
       </a>
-      <script
-        async
-        src="https://platform.twitter.com/widgets.js"
-        charSet="utf-8"
-      ></script>{" "}
+      <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>{' '}
     </>
   );
 }

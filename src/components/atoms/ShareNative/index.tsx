@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import React from "react";
+import React from 'react';
 
 export default function ShareNative() {
   return (
@@ -8,7 +8,7 @@ export default function ShareNative() {
       type="button"
       onClick={() => {
         if (!window.navigator.canShare) {
-          alert("PC 환경에서는 해당 기능을 지원하지 않습니다.");
+          alert('PC 환경에서는 해당 기능을 지원하지 않습니다.');
           return;
         }
         window.navigator.share({

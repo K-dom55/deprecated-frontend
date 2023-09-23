@@ -1,7 +1,7 @@
 /* eslint-disable*/
-"use client";
+'use client';
 
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 const Button = styled.button`
   width: 24px;
@@ -10,25 +10,25 @@ const Button = styled.button`
 
 export default () => {
   // 배포한 자신의 사이트
-  const realUrl = "http:localhost:3001";
+  const realUrl = 'http:localhost:3001';
   // 로컬 주소 (localhost 3000 같은거)
-  const resultUrl = "http:localhost:3000";
+  const resultUrl = 'http:localhost:3000';
 
   const shareKakao = () => {
     window.Kakao.Share.sendDefault({
-      objectType: "feed",
+      objectType: 'feed',
       content: {
-        title: "오늘의 디저트",
-        description: "아메리카노, 빵, 케익",
+        title: '오늘의 디저트',
+        description: '아메리카노, 빵, 케익',
         imageUrl:
-          "https://mud-kage.kakao.com/dn/NTmhS/btqfEUdFAUf/FjKzkZsnoeE4o19klTOVI1/openlink_640x640s.jpg",
+          'https://mud-kage.kakao.com/dn/NTmhS/btqfEUdFAUf/FjKzkZsnoeE4o19klTOVI1/openlink_640x640s.jpg',
         link: {
           mobileWebUrl: realUrl,
         },
       },
       buttons: [
         {
-          title: "나도 테스트 하러가기",
+          title: '나도 테스트 하러가기',
           link: {
             mobileWebUrl: realUrl,
           },

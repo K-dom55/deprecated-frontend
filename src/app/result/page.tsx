@@ -1,4 +1,4 @@
-import ResultTemplate from "@/components/templates/ResultTemplate";
+import ResultTemplate from '@/components/templates/ResultTemplate';
 
 export default function Result() {
   return (
