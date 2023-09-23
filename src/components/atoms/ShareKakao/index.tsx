@@ -1,10 +1,7 @@
 /* eslint-disable*/
 "use client";
 
-import { css } from "@emotion/react";
 import styled from "@emotion/styled";
-import { useEffect } from "react";
-// kakao 기능 동작을 위해 넣어준다.
 
 const Button = styled.button`
   width: 24px;
@@ -12,14 +9,13 @@ const Button = styled.button`
 `;
 
 export default () => {
-  const { Kakao } = window;
   // 배포한 자신의 사이트
   const realUrl = "http:localhost:3001";
   // 로컬 주소 (localhost 3000 같은거)
   const resultUrl = "http:localhost:3000";
 
   const shareKakao = () => {
-    Kakao.Share.sendDefault({
+    window.Kakao.Share.sendDefault({
       objectType: "feed",
       content: {
         title: "오늘의 디저트",
